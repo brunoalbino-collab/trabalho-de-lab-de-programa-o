@@ -1,0 +1,88 @@
+nome dos participantes:
+ARMANDO FURTADO ROCHA
+matricula:
+2022024002
+DANIEL SANTOS MOURAO
+matricula:
+2023096427
+BRUNO FERES WANDERLEY ALBINO
+matricula:
+2023081390
+
+-Descrição do Problema: Verificador de Maioridade
+Objetivo:
+
+Desenvolver um programa na linguagem C que determine se um indivíduo atingiu a maioridade legal (18 anos) com base em uma entrada numérica fornecida pelo usuário.
+
+Requisitos Funcionais:
+
+O programa deve solicitar que o usuário insira um valor inteiro representando sua idade.
+
+O sistema deve realizar uma comparação lógica para verificar se o valor é igual ou superior a 18.
+
+Saída Condicional:
+
+Se o valor for maior ou igual a 18, o programa deve exibir uma mensagem confirmando que o acesso é permitido ou que o usuário é maior de idade.
+
+Se o valor for menor que 18, o programa deve exibir uma mensagem informando que o acesso foi negado ou que o usuário é menor de idade.
+
+Restrições Técnicas:
+
+Utilizar a biblioteca padrão de entrada e saída (stdio.h).
+
+Tratar o dado de entrada obrigatoriamente como um tipo inteiro (int).
+
+Garantir o encerramento correto do programa após a exibição da resposta (retorno 0)
+
+
+
+
+1. Explicação da Lógica
+A lógica deste programa é baseada em uma estrutura de decisão condicional. O fluxo funciona da seguinte forma:
+
+Declaração de Variável: O programa reserva um espaço na memória (int idade) para armazenar um número inteiro.
+
+Entrada de Dados: A função scanf captura o valor digitado pelo usuário e o armazena no endereço de memória da variável idade.
+
+Comparação Matemática: O programa utiliza um operador relacional (>=) para comparar o valor armazenado com a constante 18.
+
+Desvio de Fluxo:
+
+Se a condição for Veradeira, o bloco de código dentro do if é executado.
+
+Se a condição for Falsa, o fluxo é desviado para o bloco else.
+
+
+
+
+
+2. Como Compilar e Executar
+Para transformar esse código escrito em texto em um programa funcional, você precisará de um compilador (como o GCC).
+
+Passo a passo no terminal (Linux/macOS/Windows com MinGW):
+
+1 Salvar o arquivo: Salve o código como programa.c.
+
+2 Compilar: Use o comando abaixo para gerar o executável:
+
+gcc programa.c -o programa
+(O parâmetro -o define o nome do arquivo de saída).
+3 Executar:
+./programa
+
+
+
+
+
+3. Exemplo de Entrada e Saída
+Aqui estão dois cenários possíveis de execução do programa:
+
+Cenário A (Maior de idade)
+Entrada: 21
+
+Saída: Acesso permitido: Voce e maior de idade.
+
+Cenário B (Menor de idade)
+Entrada: 15
+
+Saída: Acesso negado: Menor de idade.
